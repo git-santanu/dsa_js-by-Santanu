@@ -18,7 +18,7 @@ const searchElement = (arr, target) => {
 const res = searchElement(arr, 9)
 console.log(res)
 const binary_searchElement = (arr, target) => {
- let st = 0;
+ let st = arr[0];
  let end = arr.length -1
  while (st <= end) {
     const mid = Math.floor((st+end)/2)
