@@ -1,4 +1,5 @@
 const arr = [1, 3, 10, 50, 9, 34, 25, 100, 255] // search the index of 9
+
 // mid = (l+h)/2
 // (mid === target) return arr[mid]
 // (target > arr[mid]) l= mid +1
@@ -17,7 +18,8 @@ const searchElement = (arr, target) => {
 
 const res = searchElement(arr, 9)
 console.log(res)
-const binary_searchElement = (arr, target) => {
+
+const binarySearchElement = (arr, target) => {
  let st = arr[0];
  let end = arr.length -1
  while (st <= end) {
@@ -33,7 +35,7 @@ const binary_searchElement = (arr, target) => {
  return -1
 }
 
-const res1 = binary_searchElement([...arr].sort((a, b) => a - b), 9)
+const res1 = binarySearchElement([...arr].sort((a, b) => a - b), 9)
 console.log(res1)
 
 
