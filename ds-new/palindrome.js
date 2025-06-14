@@ -27,23 +27,23 @@ const isAlphaNumeric = (string) => {
 }
 
 const isPalinDrome = (string) => {
-    let st = 0;
-    let end = string.length - 1;
-    while (st < end) {
+  let st = 0;
+  let end = string.length - 1;
+  while (st < end) {
     if (!isAlphaNumeric(string[st])) {
-        st ++;
-        continue;
+      st++;
+      continue;
     }
-     if (!isAlphaNumeric(string[end])) {
-        end --;
-        continue;
+    if (!isAlphaNumeric(string[end])) {
+      end--;
+      continue;
     }
     if (string[st].toLowerCase() !== string[end].toLowerCase()) {
-        return false
+      return false;
     }
-    st ++;
-    end --;
+    st++;
+    end--;
   }
-return true
-}
+  return true;
+};
 console.log(isPalinDrome('1@2%1'))
