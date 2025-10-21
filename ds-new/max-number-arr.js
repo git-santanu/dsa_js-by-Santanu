@@ -7,7 +7,7 @@ for(let i =0; i < arr.length; i++) {
 }
 return max;
 }
-const arr = [2, 8, 9, 10, 25];
+const arr = [2, 8, 9, 10, 23, 25];
 console.log(findMaxNumber(arr));
 
 const findMinmumNumber = (arr) => {
@@ -28,8 +28,8 @@ const findSecondLargestNumber = (arr) => {
         if(arr[i] > largest) {
             secondLargest = largest
             largest = arr[i]
-        } else if (arr[i] < largest) {
-            largest = arr[i]
+        } else if (arr[i] < largest && arr[i] > secondLargest) {
+            secondLargest = arr[i]
         }
     }
     return secondLargest
