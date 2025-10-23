@@ -34,4 +34,19 @@ const findSecondLargestNumber = (arr) => {
     }
     return secondLargest
 }
-console.log(findSecondLargestNumber(arr))
+console.log(findSecondLargestNumber(arr));
+
+const findSecondSmallestNumber = (arr) => {
+    let smallest = arr[0];
+    let secondSmalllest = arr[1];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] < smallest) {
+            secondSmalllest = smallest;
+            smallest = arr[i];
+        } else if (arr[i] > smallest && arr[i] < secondSmalllest) {
+            secondSmalllest = arr[i];
+        }
+    };
+    return secondSmalllest;
+};
+console.log(findSecondSmallestNumber(arr));
