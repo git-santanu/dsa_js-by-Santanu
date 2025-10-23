@@ -10,7 +10,7 @@ const removeElement = (n) => {
   for (let j = 0; j <= x; j++) {
     unique[j] = n[j];
   }
-  return { no_unique_elements:x+1, unique };
+  return { no_unique_elements: x + 1, unique };
 };
 const arr = [1, 2, 2, 3, 3, 4, 4, 4, 4, 5];
 const res = removeElement(arr);

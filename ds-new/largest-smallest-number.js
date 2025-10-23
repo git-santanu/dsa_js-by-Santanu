@@ -15,13 +15,13 @@ const res = findLargest(arr);
 console.log(res)
 
 const findSmallest = (arr) => {
-    let small_num = Infinity
-    for(let i= 0; i<arr.length; i++) {
-        if(arr[i] < small_num) {
-            small_num = arr[i]
-        }
+  let small_num = Infinity
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] < small_num) {
+      small_num = arr[i]
     }
-    return small_num
+  }
+  return small_num
 }
 
 const res1 = findSmallest(arr);

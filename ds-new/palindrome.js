@@ -53,9 +53,9 @@ const isNumberPalinDrome = (num) => {
   let rev = 0;
   let last = 0;
   while (num > 0) {
-    last = num%10;
-    rev = (rev*10) + last;
-    num = Math.floor(num/10);
+    last = num % 10;
+    rev = (rev * 10) + last;
+    num = Math.floor(num / 10);
   }
   return rev === original_num;
 };
